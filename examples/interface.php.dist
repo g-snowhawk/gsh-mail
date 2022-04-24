@@ -1,0 +1,33 @@
+<?php
+/*
+ * デバッグモード
+ * 0: 無効
+ * 1: 有効
+ * 本稼働時は「0」を推奨
+ */
+define('DEBUG_MODE', 1);
+
+/*
+ * システム設置パス
+ */
+define('SYSTEM_ROOT', '/path/to/system'));
+
+/*
+ * エラーログを記録するファイルパス
+ * 絶対パスでの記述を推奨
+ */
+define('ERROR_LOG_DESTINATION', '/path/to/logs/error.log');
+
+/*
+ * エラー表示テンプレート
+ */
+define('ERROR_DOCUMENT', '/path/to/templates/Error.tpl');
+
+/*
+ * 追加のインクルードパス
+ */
+const INCLUDE_PATH = array();
+
+/* ========================================================================== */
+
+mb_internal_encoding('UTF-8');if(defined('INCLUDE_PATH')){$pattern="/\.".preg_quote(DIRECTORY_SEPARATOR,'/')."?".preg_quote(PATH_SEPARATOR,'/')."/"; $system_include_path=preg_replace($pattern,'',ini_get('include_path'));ini_set('include_path',implode(PATH_SEPARATOR,INCLUDE_PATH).PATH_SEPARATOR.$system_include_path);}require_once 'Gsnowhawk/App.php';$inst=new Gsnowhawk\App(ERROR_DOCUMENT);

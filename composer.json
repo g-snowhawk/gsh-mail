@@ -1,0 +1,22 @@
+{
+    "name": "g-snowhawk/gsh-mail",
+    "type": "library",
+    "description": "This package is mail form for the Website.",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4.0",
+        "g-snowhawk/gsh-core": "v1.0.*"
+    },
+    "author": {
+        "name": "Taka G",
+        "homepage": "https://www.p5on.net"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gsnowhawk\\Mail\\" : "src/Mail/"
+        },
+        "classmap": [
+            "src/Mail/Mail.php"
+        ]
+    }
+}
