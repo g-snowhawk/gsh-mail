@@ -1,0 +1,48 @@
+<?php
+; ----------------------------------------------------------
+;
+; System Global Settings
+;
+; ----------------------------------------------------------
+[global]
+; Domain Name.
+; It is not contain the subdomain.
+domain_name = "host.domain.tld"
+
+; Secure Domain Name.
+;secure_domain = "ssl.domain.tld"
+
+; Path to log files.
+log_dir = "/path/to/logs"
+
+; Path to temporary files.
+tmp_dir = "/path/to/tmp"
+
+; Cache directory for template engine.
+cache_dir = "/path/to/cache"
+
+; Application URL.
+system_path = "/url/interface.php"
+
+; System Language
+system_lang = "ja"
+
+[application]
+; Default mode
+default_mode = "mail.form"
+
+; Allow guest running
+guest = allow
+
+[mail]
+; Recipient E-mail address
+mail_to = "recipient@host.domain.tld"
+
+; Recipient E-mail address
+reply_from = "no-reply@host.domain.tld"
+
+; Subject for auto reply
+reply_subject = "This is auto reply message"
+
+; Subject for message
+mail_subject = "This message from application"
