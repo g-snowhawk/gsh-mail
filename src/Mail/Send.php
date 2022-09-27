@@ -60,7 +60,7 @@ class Send extends \Gsnowhawk\Mail
         } else {
             $valid = $this->validation();
 
-            $return_from_plugin = $this->app->execPlugin('beforeSendmail');
+            $return_from_plugin = $this->app->execPlugin('beforeSendmail', $valid);
             $result = true;
             foreach ($return_from_plugin as $return) {
                 if ($return === false) {
