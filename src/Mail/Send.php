@@ -116,24 +116,24 @@ class Send extends \Gsnowhawk\Mail
         if (is_array($headers)) {
             foreach ($headers as $key => $value) {
                 switch (strtolower($key)) {
-                case 'bcc':
-                    $bcc = $value;
-                    break;
-                case 'cc':
-                    $cc = $value;
-                    break;
-                case 'from':
-                    $from = $value;
-                    break;
-                case 'subject':
-                    $subject = $value;
-                    break;
-                case 'to':
-                    $to = $value;
-                    break;
-                default:
-                    $extraheaders[$key] = $value;
-                    break;
+                    case 'bcc':
+                        $bcc = $value;
+                        break;
+                    case 'cc':
+                        $cc = $value;
+                        break;
+                    case 'from':
+                        $from = $value;
+                        break;
+                    case 'subject':
+                        $subject = $value;
+                        break;
+                    case 'to':
+                        $to = $value;
+                        break;
+                    default:
+                        $extraheaders[$key] = $value;
+                        break;
                 }
             }
         }
@@ -186,24 +186,24 @@ class Send extends \Gsnowhawk\Mail
         if (is_array($headers)) {
             foreach ($headers as $key => $value) {
                 switch (strtolower($key)) {
-                case 'bcc':
-                    $bcc = $value;
-                    break;
-                case 'cc':
-                    $cc = $value;
-                    break;
-                case 'from':
-                    $from = $value;
-                    break;
-                case 'subject':
-                    $subject = $value;
-                    break;
-                case 'to':
-                    $to = $value;
-                    break;
-                default:
-                    $extraheaders[$key] = $value;
-                    break;
+                    case 'bcc':
+                        $bcc = $value;
+                        break;
+                    case 'cc':
+                        $cc = $value;
+                        break;
+                    case 'from':
+                        $from = $value;
+                        break;
+                    case 'subject':
+                        $subject = $value;
+                        break;
+                    case 'to':
+                        $to = $value;
+                        break;
+                    default:
+                        $extraheaders[$key] = $value;
+                        break;
                 }
             }
         }
